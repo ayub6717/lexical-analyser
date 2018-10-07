@@ -1,0 +1,83 @@
+package beginnerjava;
+
+import java.util.Scanner;
+
+
+public class codeDemo {
+    
+    public static void main(String[] args) {
+        
+         String[] keyWord = {"int", "float", "double", "long", "char", "if", "else", "for", "while", "do", "include"};
+	 String[] MathOperator = {"+", "-", "*", "/", "%"};
+	 String[] LogicalOperator = {">", "<", "=", "==", ">=", "<="};		
+	 String[] Symbol = {"!", "@", "#", "&", "(", ")", "_", "{", "}", ";", ":", ",", ".", "?", "[", "]", "%d", "%f", "%lf", "%ld", "%i"};
+	 String[] headerFile = {"stdio.h", "conio.h", "string.h", "math.h", "stdlib.h"};
+         String[] functions = {"main", "printf", "scanf"};
+         Scanner input=new Scanner(System.in);
+        String  i= input.nextLine();
+         int k,m,p,l,w,c,d;
+        
+         
+         for( k=0;k<=keyWord.length;k++){
+             
+             if(i==keyWord[k]){
+               
+                 System.out.println("Found"+k+"position");
+             }
+            
+              else {
+                 for( l=0;l<=MathOperator.length;l++){
+                     
+                     if(i==MathOperator[l]){
+                         
+                         System.out.println("Found"+l+"position");
+                         
+                         
+                     }
+                     
+                     
+                     
+                 }   
+               
+                 for( m=0;m<=LogicalOperator.length;m++){
+             
+             if(i==LogicalOperator[m]){
+                 
+                 System.out.println("Found"+m+"position");
+        
+             }
+             }
+                 
+                 for( w=0;w<=Symbol.length;w++){
+             
+             if(i==Symbol[w]){
+                 
+                 System.out.println("Found"+w+"position");
+                 
+             }
+        
+    }
+             for( c=0;c<=headerFile.length;c++){
+             
+             if(i==headerFile[c]){
+                 
+                 System.out.println("Found"+c+"position");    
+                 
+    
+             }
+             
+             }
+             
+             for( d=0;d<=functions.length;d++){
+             
+             if(i==functions[d]){
+                 
+                 System.out.println("Found"+d+"position");    
+             
+             
+             }
+             }
+             }
+             }
+    }
+}
